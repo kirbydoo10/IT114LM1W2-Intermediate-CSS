@@ -33,10 +33,10 @@
 Start with using "from" and "to". Now use "0%" and "100%" as your key frames.
 Set more key frames between 0% and 100%. */
 .todo-1-container .box{
-    animation: dog 1000ms ease infinite;
+    animation: LeftandRight 1000ms ease infinite;
 }
 
-@keyframes dog {
+@keyframes LeftandRight {
     0% {
         transform: translate(0px);
     }
@@ -48,14 +48,14 @@ Set more key frames between 0% and 100%. */
 
 /* Todo 3.2: Try the different timing funcitons such as linear, ease-in, ease-in-out, cubic-bezier, and steps*/
 .todo-2-container .box{
-    animation-name: try;
+    animation-name: easeTime;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: steps(10, start);
 
 }
 
-@keyframes try {
+@keyframes easeTime {
     0%{
         transform: scaleX(1);
     }
